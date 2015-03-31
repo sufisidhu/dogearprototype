@@ -1,0 +1,234 @@
+
+* {
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+
+#demo {
+        /*width: 500px;
+        height: 500px;*/
+        visibility: hidden;
+        /*margin: 100px auto;
+        background: #457;*/
+        /*cursor: hand;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+        cursor: grab;*/
+        /*text-align: center;
+        line-height: 500px;*/
+        width:375px;
+        height:667px;
+        overflow:hidden;
+        background-color:#fafafa;
+        margin-top:50px;
+        margin: 0 auto;
+
+}
+
+
+.projectsynopsis {
+  height:300px;
+  background-color:#fafafa;
+}
+
+.projecttitle {
+  font-family: 'Lato', sans-serif;
+  font-weight:400;
+  font-size: 80px;
+  text-align: center;
+  margin-top:40px;
+}
+
+.projectdescription {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  font-size: 20px;
+  text-align: center;
+  padding-top:20px;
+  max-width:400px;
+  margin: 0 auto;
+}
+
+.prototype {
+  padding:80px;
+  background-color:#ededed;
+}
+
+/*.mobileframe {
+  width:375px;
+  height:667px;
+  overflow:hidden;
+  background-color:#fafafa;
+  margin-top:50px;
+  margin: 0 auto;
+}*/
+
+.mobileframetooltip {
+  width:375px;
+  height:667px;
+  overflow:hidden;
+  background-color:rgba(0,0,0,.1);
+  margin-top:50px;
+}
+
+.headerbreak {
+  margin-top:60px;
+  border-top:2px solid #e0e0e0;
+  margin-bottom:0px;
+}
+
+.iconback {
+  height: 22px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.iconsave {
+  height: 35px;
+  margin-top: 14px;
+  margin-left: 20px;
+  text-align:center;
+}
+
+.iconsavepreview {
+  float:right;
+  height: 42px;
+  margin-right:20px;
+}
+
+.articleimage {
+  height:350px;
+}
+
+.tooltipmain {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  line-height: 1.4;
+  visibility: visible;
+  opacity:10;
+  height:135px;
+  margin-top:-200px;
+}
+
+.tooltipmainseparate {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  line-height: 1.4;
+  visibility: visible;
+  opacity:10;
+  height:135px;
+  margin-top:-400px;
+  margin-left:500px;
+
+}
+
+.articletitle {
+  font-family: 'Nunito', sans-serif;
+  font-weight:400;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.2;
+}
+
+.articlegenre {
+  font-family: 'Nunito', sans-serif;
+  font-weight:300;
+  font-size: 20px;
+  margin-top:20px;
+  margin-left:20px;
+}
+
+.articlesource {
+  font-family: 'Nunito', sans-serif;
+  font-weight:300;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top:10px;
+}
+
+#holder {
+    margin-top: -450px;
+    margin-left: 500px;
+    position: relative;
+    background: #d3d3d3;
+  }
+  .pulse {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #d3d3d3;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #d3d3d3;
+    z-index: 10;
+    position: absolute;
+  }
+  .dot {
+    border: 10px solid #d3d3d3;
+    background: transparent;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: pulse 3s ease-out;
+    -moz-animation: pulse 3s ease-out;
+    animation: pulse 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 1;
+    opacity: 0;
+  }
+  @-moz-keyframes pulse {
+   0% {
+      -moz-transform: scale(0);
+      opacity: 0.0;
+   }
+   25% {
+      -moz-transform: scale(0);
+      opacity: 0.1;
+   }
+   50% {
+      -moz-transform: scale(0.1);
+      opacity: 0.3;
+   }
+   75% {
+      -moz-transform: scale(0.5);
+      opacity: 0.5;
+   }
+   100% {
+      -moz-transform: scale(1);
+      opacity: 0.0;
+   }
+  }
+  @-webkit-keyframes "pulse" {
+   0% {
+      -webkit-transform: scale(0);
+      opacity: 0.0;
+   }
+   25% {
+      -webkit-transform: scale(0);
+      opacity: 0.1;
+   }
+   50% {
+      -webkit-transform: scale(0.1);
+      opacity: 0.3;
+   }
+   75% {
+      -webkit-transform: scale(0.5);
+      opacity: 0.5;
+   }
+   100% {
+      -webkit-transform: scale(1);
+      opacity: 0.0;
+   }
+  }
