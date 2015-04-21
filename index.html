@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>dogear</title>
   <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.5.9/perfect-scrollbar.min.css">
+
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -18,11 +20,18 @@
   <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
   <script type="text/javascript" src="js/dragend.js"></script>
 
+  <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.5.9/perfect-scrollbar.min.css"></script>
+
   <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 
-
+     <style>
+      /*set content height and width*/
+      .container { position:relative; margin:0px auto; padding:0px; width: 390px; height: 667px; overflow: auto; }
+      /*set actual content height and width that is scrollable*/
+      .container .content { width: 375px; }
+    </style>
 
 <body>
 
@@ -41,11 +50,11 @@
       <hr class="headerbreak">
   </div>
 
-  <div id="demo">
+  <div id="demo" class="articlelist">
     <ul>
 
-      <li class="first dragend-page">
-        <div class="mobileframe">
+      <li class="first dragend-page" style="display:block;">
+        <div class="mobilepreview">
               <div class="row">
                 <div class="col-sm-12"><img class="articleimage" src="images/article3image.jpg"></div>
               </div>
@@ -60,8 +69,8 @@
         </div>
       </li>
 
-      <li class="first dragend-page">
-        <div class="mobileframe">
+      <li class="first dragend-page" style="display:block;">
+        <div class="mobilepreview">
               <div class="row">
                 <div class="col-sm-12"><img class="articleimage" src="images/article1image.jpg"></div>
               </div>
@@ -76,8 +85,8 @@
         </div>
       </li>
 
-      <li class="first dragend-page">
-        <div class="mobileframe">
+      <li class="first dragend-page" style="display:block;">
+        <div class="mobilepreview">
               <div class="row">
                 <div class="col-sm-12"><img class="articleimage" src="images/article2image.jpg"></div>
               </div>
@@ -92,8 +101,8 @@
         </div>
       </li>
 
-      <li class="first dragend-page">
-        <div class="mobileframe">
+      <li class="first dragend-page" style="display:block;">
+        <div class="mobilepreview">
               <div class="row">
                 <div class="col-sm-12"><img class="articleimage" src="images/article4image.jpg"></div>
               </div>
@@ -115,8 +124,83 @@
     <div class="col-sm-12"><img class="iconsavepreview" src="images/save.png"></div>
   </div>
 
-</div>
 
+
+
+
+
+  <div class="fullarticle" id="article2">
+    <div class="mobileheaderdisplay">
+
+        <div class="col-sm-2 goback"><img class="iconback" src="images/backarrow.png"></div>
+        <hr class="headerbreak">
+    </div>
+
+
+  <div class="mobiledisplay">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+              <div class="col-sm-12"><h1 class="articledisplaytitle">Feds Demand Reddit Identify Users of a Dark-Web Drug Forum</h1></div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12"><p class="articlesourceauthor">ANDY GREENBERG | WIRED</p></div>
+              <div class="col-sm-12"><p class="articledate">MARCH 30,2015</p></div>
+              <hr class="articlebreak">
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12"><p class="articlebody">Over the last year, Reddit’s “dark net markets” discussion forum has grown into one of the central fixtures of the online drug scene.</p>
+
+
+                <p class="articlebody">At any given moment, hundreds of redditors are browsing reddit.com/r/darknetmarkets, many brazenly discussing anonymous online sales on the open internet.</p>
+
+                <p class="articlebody">Now the feds have noticed. And they’re telling Reddit to cough up a few of those users’ real-world identities.</p>
+
+                <p class="articlebody">Earlier this month, a Baltimore Department of Homeland Security (DHS) Immigration and Customs Enforcement agent sent a subpoena to Reddit demanding that the site turn over a collection of personal data about five users of the r/darknetmarkets forum. The subpoena appears to be the first hint of a federal investigation of the recently defunct massive online market known as Evolution, which sold drugs, weapons, and stolen financial details. All five targets of the subpoena were involved, to varying degrees, in the Reddit discussion of that black market’s abrupt disappearance two weeks ago, in which two top administrators apparently absconded with millions of dollars worth of bitcoin belonging to Evolution’s buyers and sellers.</p>
+
+                <p class="articlebody">According to a copy of the subpoena shared with WIRED by one of the forum’s moderators who was named in the document, the DHS seeks information that includes the names, IP addresses, dates and times of site visits as well as other data that Reddit likely doesn’t possess, including the users’ phone numbers and financial data. (Reddit doesn’t even require an email address to sign up.)</p>
+
+                <p class="articlebody">The subpoena’s five targets are NSWGreat, a user who had claimed to be an Evolution staffer; three other users named z-l, Deepthroat and Evosmith who boasted on Reddit that they were tracking Evolution’s administrators or identifying details about them; and Gwern Branwen, a well-known security researcher, writer and moderator of the darknetmarkets forum. It’s Branwen who has now publicly revealed the subpoena’s existence to WIRED. He says the DHS’s interest in him may be in part because Z-l had recently publicly promised to send proof of findings about Evolution’s administrators to him, though Branwen says he never received any such information.</p>
+
+                <p class="articlebody">Branwen says he sees z-l, Deepthroat, Evosmith and himself as likely red herrings for law enforcement, but that NSWGreat might be an actually important target of the government’s investigation into Evolution. The apparently Australian NSWGreat went so far as to host an “ask me anything” session on Reddit as an internet drug trafficker and public relations staffer for Evolution’s black market. “Given the date and the affected accounts, it doesn’t take Holmes to deduce the reason for this subpoena,” writes Gwern in a statement he sent to WIRED. “Just one naked connection revealing [NSWGreat’s] home IP would be enough, and if he’s like past market employees, a raid will turn up all the damning evidence one could hope for.”</p>
+
+                <p class="articlebody">Branwen adds that he himself has never sold illegal products on a dark web market or worked for any such site. He’s nonetheless troubled by DHS’s probe into his personal data. “How can I continue as a [Reddit] moderator,” he writes, “knowing that all my non-[encrypted] communications have been laid bare, there may be followup subpoenas for my Gmail account, and I may be under further investigation myself?”</p>
+
+                <p class="articlebody">When WIRED reached out to Reddit, a spokesperson pointed to the site’s privacy policy, which states that Reddit does collect IP addresses and other potentially identifying data from users, which it deletes after 90 days. The policy adds that it may disclose that data to law enforcement—or hold it longer than 90 days—if legally required to do so. Reddit’s spokesperson wouldn’t comment on whether or when the company might comply with the DHS subpoena.</p>
+
+                <p class="articlebody">The DHS didn’t respond to WIRED’s request for comment, but it’s no surprise that Evolution has become the target of a federal investigation. The site, which was online for just over a year, was by some measures the largest-ever drug market on the dark web, with 34,000 total drug listings at its peak. A week before the site’s disappearance, German police arrested the leaders of one drug ring that operated on the site and seized 700 pounds of narcotics from that single bust alone. The two pseudonymous administrators of Evolution, Verto and Kimble, are believed to have taken as much as $12 million from the site’s users at the time of its shutdown, after a year of collecting commissions on every sale.</p>
+
+                <p class="articlebody">Evolution’s shutdown helped to highlight just how central Reddit’s r/darknetmarkets community has become to the dark web’s drug economy in recent months. After the Evolution incident—along with market disruptions like the takedown of several top sites by law enforcement last November—buyers and sellers have congregated on r/darknetmarkets to regroup and reconnect. The forum has nearly 50,000 subscribers. That’s less than other reddit drug forums like r/drugs and the marijuana-focused r/trees, but those larger groups don’t so explicitly discuss drug sales. Though r/darknetmarket’s rules ban any direct dealing on Reddit, the site maintains a directory of links to the most popular dark web drug markets and comprehensive tutorials on using them. Buyers frequently post reviews of dealers’ products, and weekly threads like What to Buy Wednesday and Sell Your Shit Sunday let vendors advertise their wares.</p>
+
+                <p class="articlebody">The DHS’s subpoena will no doubt serve as a jarring reminder to Reddit’s dark web drug forum that those discussions are nakedly public and potentially vulnerable to law enforcement. Though the drug sales themselves are generally hosted on sites that require users to run the anonymity software Tor to hide their identities, Reddit offers no such protection. Branwen says he expects his revelation of the subpoena to drive many of r/darknetmarket’s conversations to Tor-protected forums like the drug-market discussion site called the Hub. “Riskier discussions will move onto the Hub, and as long as the Reddit admins don’t get spooked and shut it down similar to /r/jailbait, [r/darknetmarkets] will remain a useful discussion place,” he says.</p>
+
+                <p class="articlebody">Branwen’s reference to r/jailbait, a forum banned in 2011 where users posted scantily clad pictures of underage girls, highlights that Reddit has, in fact, been cleaning up some of its more controversial underground communities. More recently Reddit shut down other groups like r/creepshots and r/thefappening, which hosted links to stolen or surreptitiously taken nudes or revealing images or women.</p>
+
+                <p class="articlebody">Drug-dealing discussions, for now, remain fair game for Redditors. But it’s apparent they’re fair game for law enforcement investigators, too.
+
+                </p>
+                </div>
+          </div>
+        </div>
+      </div>
+              <div class="mobilefooterdisplay">
+                <div class="col-sm-12"><img class="iconsavepreview"></div>
+              </div>
+    </div>
+  </div>
+
+
+
+    <script>
+      window.onload = function () {
+        [].forEach.call(document.querySelectorAll('.container'), function (el) {
+          Ps.initialize(el);
+        });
+      };
+    </script>
 
 
 <!-- <div id="holder">
@@ -159,6 +243,29 @@
 
 
   </script>
+
+
+  <script>
+    $( document ).ready(function() {
+        $('.articlelist ul li').dblclick(function() {
+          var i = $(this).index();
+          $('#demo, .dragend-page, .mobileheader, .mobilefooter').hide();
+          $('.fullarticle').hide();
+          $('#article' + (i+1)).show();
+        });
+    });
+  </script>
+
+<script>
+    $( document ).ready(function() {
+      $('.goback').click(function() {
+        $('#demo, .dragend-page, .mobileheader, .mobilefooter').show();
+        $('#article2, #article3, #article4').hide();
+      });
+    });
+
+</script>
+
 
 </body>
 </html>
